@@ -87,6 +87,8 @@ const Doctor = require('../Models/Doctor.model');
 const Technician = require('../Models/productmodel');
 const Consumer = require('../Models/consult.model');
 const Payment = require('../Models/PaymentModel');
+const Order = require('../Models/orderModel');
+
 
 exports.userCount = async (req, res) => {
   try {
@@ -142,4 +144,14 @@ exports.paymentCount = async (req, res) => {
     res.status(500).json({ message: 'Error fetching payments count', error: err });
   }
 };
+exports.orderCount = async (req, res) =>{
+  try {
+    const count = await Order.countDocuments();
+    console.log('Payment count:', count); // Add this line
+    res.json({ count });
+  } catch (err) {
+    console.error('Error fetching payments count:', err); // Add this line
+    res.status(500).json({ message: 'Error fetching payments count', error: err });
+  }
+}
 

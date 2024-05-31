@@ -937,6 +937,7 @@ function BookingForm() {
                     stripeKey="pk_test_51PGywdBwqNocB2yIgRUhTOxCLUXifycb47usxmBwsizanJt9hIuwOLGasezA5xeXFukFgxT4UPmcqTRPl8ekCh3M00GL7hsLNh"
                     token={handleToken}
                     name="Consultation Booking"
+                    currency='LKR'
                     amount={booking.price * 100}
                 >
                     <button className="btn btn-success mt-4">Confirm Payment</button>

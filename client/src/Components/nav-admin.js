@@ -122,6 +122,9 @@ function Navbar() {
             <a className="nav-link" href="/Admin/Consultation">Bookings</a>
           </li>
           <li className="nav-item">
+            <a className="nav-link" href="/Admin/orders">Orders</a>
+          </li>
+          <li className="nav-item">
             <a className="nav-link" href="/Admin/Payment">Payments</a>
           </li>
           {isAuthenticated ? (
