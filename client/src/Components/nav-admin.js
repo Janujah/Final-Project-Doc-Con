@@ -111,22 +111,22 @@ function Navbar() {
         <ul className="nav-links">
           <li className="nav-item">
             <a className="nav-link" href="/Admin/users">Users</a>
-          </li>
+          </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <li className="nav-item">
             <a className="nav-link" href="/Admin/Doctors">Doctors</a>
-          </li>
+          </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <li className="nav-item">
             <a className="nav-link" href="/Admin/Technicians">Ortho Resources</a>
-          </li>
+          </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <li className="nav-item">
             <a className="nav-link" href="/Admin/Consultation">Bookings</a>
-          </li>
+          </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <li className="nav-item">
             <a className="nav-link" href="/Admin/orders">Orders</a>
-          </li>
+          </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <li className="nav-item">
             <a className="nav-link" href="/Admin/Payment">Payments</a>
-          </li>
+          </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           {isAuthenticated ? (
             <li className="nav-item">
               <div className="dropdown">
@@ -137,7 +137,7 @@ function Navbar() {
                 </div>
                 {dropdownOpen && (
                   <div className="dropdown-menu">
-                    <button className="dropdown-item" onClick={handleProfileClick}>{username}</button>
+                    <button className="dropdown-item">{username}</button>
                     <button className="dropdown-item" onClick={handleLogout}>Logout</button>
                   </div>
                 )}

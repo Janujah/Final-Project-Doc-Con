@@ -147,7 +147,7 @@ exports.paymentCount = async (req, res) => {
 exports.orderCount = async (req, res) =>{
   try {
     const count = await Order.countDocuments();
-    console.log('Payment count:', count); // Add this line
+    console.log('Order count:', count); // Add this line
     res.json({ count });
   } catch (err) {
     console.error('Error fetching payments count:', err); // Add this line

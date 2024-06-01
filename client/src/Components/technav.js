@@ -77,7 +77,7 @@ function OrthoResourcesNavbar() {
                 </div>
                 {dropdownOpen && (
                   <div className="dropdown-menu">
-                    <button className="dropdown-item" onClick={handleProfileClick}>{username}</button>
+                    <button className="dropdown-item" >{username}</button>
                     <button className="dropdown-item" onClick={handleLogout}>Logout</button>
                   </div>
                 )}
